@@ -42,7 +42,8 @@
         }
     }
 
-    > .mud-table-body:last-child {
+    > .mud-table-body:last-child,
+    > .mud-table-foot:last-child {
         > .mud-table-row:last-child {
             > .mud-table-cell {
                 border-bottom: none;
@@ -390,7 +391,6 @@
     position: relative;
 
     & .mud-table-loading-progress {
-        position: absolute;
         width: 100%;
     }
 }
@@ -552,9 +552,9 @@
 }
 
 @media (max-width:$breakpoint-xxl) {
-  @include table-display-smalldevices("xl-");
+    @include table-display-smalldevices("xl-");
 }
 
 @media (min-width:$breakpoint-xxl) {
-  @include table-display-smalldevices("xxl-");
+    @include table-display-smalldevices("xxl-");
 }
